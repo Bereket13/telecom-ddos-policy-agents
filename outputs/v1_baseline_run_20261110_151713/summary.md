@@ -1,0 +1,18 @@
+# Run summary: v1_baseline_run_20261110_151713
+
+| Metric | Value |
+|---|---|
+| llm_calls | 15 |
+| agent_decisions | 11 |
+| coordinator_briefs | 4 |
+| tool_calls | 1 |
+| valid_json | 14 |
+| messages_routed_between_agents | 9 |
+| citations_total | 36 |
+| citations_by_status | {'verified': 33, 'no-source-id': 1, 'source-retrieved-page-mismatch': 2} |
+| citation_verified_rate | 0.917 |
+| distinct_sources_cited_verified | {'G03': 5, 'G09': 4, 'G05': 14, 'G04': 3, 'G08': 2, 'G07': 1, 'G12': 3, 'G13': 1} |
+| gap_statements_total | 17 |
+| gap_statements_distinct | 11 |
+| mean_latency_s | 156.9 |
+| total_llm_minutes | 39.2 |
