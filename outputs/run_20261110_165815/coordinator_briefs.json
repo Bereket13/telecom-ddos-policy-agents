@@ -1,0 +1,216 @@
+[
+  {
+    "round": 1,
+    "sim_time": "T+00:00",
+    "brief": {
+      "summary": "The SOC and REGULATOR have different actions and responsibilities regarding the surge in signalling and DNS traffic and the AI-based DDoS detector failure. The SOC is investigating and providing a preliminary assessment, while the REGULATOR is requesting the SOC to investigate. The SOC's actions are unclear in terms of who should notify whom and by when, and there is a gap in the REGULATOR's request for information on the potential unseen attack type.",
+      "conflicts": [
+        "SOC's investigation and REGULATOR's request for information on the potential unseen attack type"
+      ],
+      "unclear_responsibilities": [
+        "Who should notify whom and by when is unclear because the SOC is investigating and the REGULATOR is requesting information on the potential unseen attack type"
+      ],
+      "policy_gaps": [
+        {
+          "gap": "Who should notify whom and by when is unclear because the SOC is investigating and the REGULATOR is requesting information on the potential unseen attack type",
+          "global_example": "The SOC is investigating the reported issues and providing a preliminary assessment within 1 hour, while the REGULATOR is requesting the SOC to investigate the reported issues and provide a preliminary assessment within 1 hour. The SOC's actions are unclear in terms of who should notify whom and by when.",
+          "ref": "G03 p.8",
+          "recommendation": "The SOC should clearly define who should notify whom and by when in their investigation process."
+        },
+        {
+          "gap": "The REGULATOR's request for information on the potential unseen attack type is unclear because the SOC's AI-based DDoS detector failed to identify the attack.",
+          "global_example": "The SOC is investigating the reported issues and providing a preliminary assessment within 1 hour, while the REGULATOR is requesting the SOC to investigate the reported issues and provide a preliminary assessment within 1 hour. The SOC's actions are unclear in terms of who should notify whom and by when.",
+          "ref": "G03 p.8",
+          "recommendation": "The REGULATOR should specify the type of information it needs from the SOC regarding the potential unseen attack type."
+        },
+        {
+          "gap": "The SOC's actions are unclear in terms of who should notify whom and by when, and there is a gap in the REGULATOR's request for information on the potential unseen attack type.",
+          "global_example": "The SOC is investigating the reported issues and providing a preliminary assessment within 1 hour, while the REGULATOR is requesting the SOC to investigate the reported issues and provide a preliminary assessment within 1 hour. The SOC's actions are unclear in terms of who should notify whom and by when.",
+          "ref": "G03 p.8",
+          "recommendation": "The SOC should clearly define who should notify whom and by when in their investigation process."
+        }
+      ],
+      "standards_gaps": [
+        "The SOC's actions are unclear in terms of who should notify whom and by when, and there is a gap in the REGULATOR's request for information on the potential unseen attack type"
+      ],
+      "priorities_next_round": [
+        "Clarify who should notify whom and by when in the SOC's investigation process, and specify the type of information the REGULATOR needs from the SOC regarding the potential unseen attack type."
+      ]
+    },
+    "citation_check": [
+      {
+        "ref": "G03 p.8",
+        "status": "source-retrieved-page-mismatch"
+      },
+      {
+        "ref": "G03 p.8",
+        "status": "source-retrieved-page-mismatch"
+      },
+      {
+        "ref": "G03 p.8",
+        "status": "source-retrieved-page-mismatch"
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "sim_time": "T+00:45",
+    "brief": {
+      "summary": "The SOC is investigating a multi-vector attack, while the REGULATOR is requesting information on the unseen attack type. The CERT is clarifying the SOC's investigation process and specifying the type of information needed from the SOC. The SOC and REGULATOR need to define who should notify whom and by when, and the CERT needs to ensure this is communicated to the SOC.",
+      "conflicts": [
+        "The SOC and REGULATOR have conflicting responsibilities regarding the notification process and the type of information to be shared."
+      ],
+      "unclear_responsibilities": [
+        "It is unclear who should notify whom and by when in the SOC's investigation process, and the type of information the REGULATOR needs from the SOC regarding the potential unseen attack type."
+      ],
+      "policy_gaps": [
+        {
+          "gap": "Who should notify whom and by when is unclear because the SOC is investigating and the REGULATOR is requesting information on the potential unseen attack type.",
+          "global_example": "Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity, G05 p.20",
+          "ref": "G05 p.20",
+          "recommendation": "The SOC and REGULATOR should clearly define the notification process and the type of information to be shared."
+        },
+        {
+          "gap": "The SOC's actions are unclear in terms of who should notify whom and by when, and there is a gap in the REGULATOR's request for information on the potential unseen attack type.",
+          "global_example": "Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity, G05 p.49",
+          "ref": "G05 p.49",
+          "recommendation": "The SOC and REGULATOR should clarify who should notify whom and by when, and specify the type of information the REGULATOR needs from the SOC regarding the potential unseen attack type."
+        },
+        {
+          "gap": "A clear and concise explanation of who should notify whom and by when in the SOC's investigation process, and the type of information the REGULATOR needs from the SOC regarding the potential unseen attack type is missing.",
+          "global_example": "African Union Convention on Cyber Security and Personal Data, G12 p.21",
+          "ref": "G12 p.21",
+          "recommendation": "The CERT should ensure that the SOC provides a clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type."
+        }
+      ],
+      "standards_gaps": [
+        "Technical standard or evaluation practice that is missing: The SOC's AI-based DDoS detector needs to be validated and retrained to ensure reliability and human oversight, as per NIST AI RMF 1.0 and AI Ready: Analysis Towards a Standardized Readiness Framework."
+      ],
+      "priorities_next_round": [
+        "Clarify the SOC's investigation process and specify the type of information the REGULATOR needs from the SOC regarding the potential unseen attack type; ensure that the SOC provides a clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type."
+      ]
+    },
+    "citation_check": [
+      {
+        "ref": "G05 p.20",
+        "status": "verified"
+      },
+      {
+        "ref": "G05 p.49",
+        "status": "verified"
+      },
+      {
+        "ref": "G12 p.21",
+        "status": "verified"
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "sim_time": "T+02:00",
+    "brief": {
+      "summary": "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type. The DPA must notify affected subscribers and relevant authorities within 24 hours as per the AI Act and NIS2 Directive.",
+      "conflicts": [
+        "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type. The DPA must notify affected subscribers and relevant authorities within 24 hours as per the AI Act and NIS2 Directive."
+      ],
+      "unclear_responsibilities": [
+        "Who should notify whom and by when is unclear because the SOC and REGULATOR need to clarify the notification process and the type of information needed from the SOC regarding the potential unseen attack type."
+      ],
+      "policy_gaps": [
+        {
+          "gap": "Who should notify whom and by when is unclear because the SOC and REGULATOR need to clarify the notification process and the type of information needed from the SOC regarding the potential unseen attack type.",
+          "global_example": "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type. The DPA must notify affected subscribers and relevant authorities within 24 hours as per the AI Act and NIS2 Directive.",
+          "ref": "G05 p.50",
+          "recommendation": "The SOC and REGULATOR should define the notification process and the type of information needed from the SOC regarding the potential unseen attack type, and ensure this is communicated to the SOC by the CERT."
+        },
+        {
+          "gap": "The specific type of AI system involved and the exact nature of the incident are not clear, which could affect the classification and notification process.",
+          "global_example": "The specific type of AI system involved and the exact nature of the incident are not clear, which could affect the classification and notification process.",
+          "ref": "G04 p.59",
+          "recommendation": "The SOC should clarify the type of AI system involved and the exact nature of the incident, and ensure this information is provided to the DPA for notification."
+        },
+        {
+          "gap": "A clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type is missing.",
+          "global_example": "A clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type is missing.",
+          "ref": "G05 p.20",
+          "recommendation": "The SOC and REGULATOR should provide a clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type, and ensure this is communicated to the SOC by the CERT."
+        }
+      ],
+      "standards_gaps": [
+        "The SOC's actions are unclear in terms of who should notify whom and by when, and there is a gap in the REGULATOR's request for information on the potential unseen attack type."
+      ],
+      "priorities_next_round": [
+        "Clarify the SOC's investigation process and specify the type of information the REGULATOR needs from the SOC regarding the potential unseen attack type.",
+        "Ensure the SOC provides a clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type.",
+        "Clarify the type of AI system involved and the exact nature of the incident, and ensure this information is provided to the DPA for notification."
+      ]
+    },
+    "citation_check": [
+      {
+        "ref": "G05 p.50",
+        "status": "verified"
+      },
+      {
+        "ref": "G04 p.59",
+        "status": "verified"
+      },
+      {
+        "ref": "G05 p.20",
+        "status": "verified"
+      }
+    ]
+  },
+  {
+    "round": 4,
+    "sim_time": "T+06:00",
+    "brief": {
+      "summary": "The SOC, REGULATOR, and DPA are working on clarifying the notification process and type of information needed from the SOC regarding the potential unseen attack type. The CERT is tracing the attack command servers to a jurisdiction without a mutual legal assistance agreement, complicating the investigation and cooperation process. A clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type is missing.",
+      "conflicts": [
+        "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type. The DPA must notify affected subscribers and relevant authorities within 24 hours as per the AI Act and NIS2 Directive. The CERT is tracing the attack command servers to a jurisdiction without a mutual legal assistance agreement, complicating the investigation and cooperation process."
+      ],
+      "unclear_responsibilities": [
+        "Who should notify whom and by when is unclear because the SOC, REGULATOR, and DPA need to clarify the notification process and the type of information needed from the SOC regarding the potential unseen attack type. The CERT is tracing the attack command servers to a jurisdiction without a mutual legal assistance agreement, complicating the investigation and cooperation process."
+      ],
+      "policy_gaps": [
+        {
+          "gap": "A clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type is missing.",
+          "global_example": "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type. The DPA must notify affected subscribers and relevant authorities within 24 hours as per the AI Act and NIS2 Directive.",
+          "ref": "G05 p.14",
+          "recommendation": "The SOC and REGULATOR should provide a clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type, in line with the AI Act and NIS2 Directive."
+        },
+        {
+          "gap": "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type.",
+          "global_example": "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type. The DPA must notify affected subscribers and relevant authorities within 24 hours as per the AI Act and NIS2 Directive.",
+          "ref": "G05 p.14",
+          "recommendation": "The SOC and REGULATOR should provide a clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type, in line with the AI Act and NIS2 Directive."
+        },
+        {
+          "gap": "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type.",
+          "global_example": "The SOC and REGULATOR need to clarify who should notify whom and by when, and the type of information needed from the SOC regarding the potential unseen attack type. The DPA must notify affected subscribers and relevant authorities within 24 hours as per the AI Act and NIS2 Directive.",
+          "ref": "G05 p.14",
+          "recommendation": "The SOC and REGULATOR should provide a clear and concise explanation of the notification process and the type of information needed from the SOC regarding the potential unseen attack type, in line with the AI Act and NIS2 Directive."
+        }
+      ],
+      "standards_gaps": [
+        "Technical standard or evaluation practice that is missing or unclear"
+      ],
+      "priorities_next_round": [
+        "Clarify the type of AI system involved and the exact nature of the incident, and ensure this information is provided to the DPA for notification."
+      ]
+    },
+    "citation_check": [
+      {
+        "ref": "G05 p.14",
+        "status": "source-retrieved-page-mismatch"
+      },
+      {
+        "ref": "G05 p.14",
+        "status": "source-retrieved-page-mismatch"
+      },
+      {
+        "ref": "G05 p.14",
+        "status": "source-retrieved-page-mismatch"
+      }
+    ]
+  }
+]
