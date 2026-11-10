@@ -1,0 +1,64 @@
+{
+  "id": "ddos_mobile_operator_v1",
+  "title": "Multi-vector DDoS on a national mobile operator while its AI detector fails silently",
+  "setting": "A national mobile network operator with about 40 million subscribers. Institutions: the operator's SOC, a national telecom regulator, a data-protection authority and a national CERT. The scenario is fictional; it is modelled on publicly available frameworks in the knowledge base and does not describe a real incident.",
+  "design_notes": "Events are released in chunks, to different agents, at different times, so that no agent ever has the full picture. Round 1 tests detection and first reporting; round 2 tests the AI-detector failure and a data-sharing dilemma; round 3 adds a personal-data breach and emergency-call degradation; round 4 adds cross-border attribution and reuse of the AI detector in another sector.",
+  "rounds": [
+    {
+      "sim_time": "T+00:00",
+      "query_hint": "DDoS attack on telecommunications network incident detection early warning notification",
+      "events": {
+        "SOC": [
+          "Signalling and DNS traffic in the core network rose to about 38 times normal within 10 minutes at three regional data centres.",
+          "Voice call setup success rate dropped from 99.2% to 71%; mobile data sessions are timing out in the capital.",
+          "The AI-based DDoS detector (XGBoost trained on CIC-IDS2017-style flow features, MCC 0.9996 in the lab) classifies 99.99% of current flows as BENIGN and raises no alert."
+        ],
+        "REGULATOR": [
+          "Hundreds of public complaints on social media about call drops and no mobile data in the capital. No notification has been received from the operator yet."
+        ]
+      },
+      "tool_calls": {
+        "SOC": {"tool": "detector_consistency_check", "args": {"traffic_ratio": 38.0, "kpi_drop_pct": 28.2, "detector_attack_share": 0.0001}}
+      }
+    },
+    {
+      "sim_time": "T+00:45",
+      "query_hint": "incident notification deadlines significant incident cross-border sharing of traffic data third party mitigation AI system logging human oversight",
+      "events": {
+        "SOC": [
+          "Manual analysis confirms a multi-vector attack: DNS and NTP reflection/amplification plus a new low-rate HTTP flood variant not present in the detector's training data.",
+          "SHAP explanations show the detector's decisions are driven mainly by Destination Port, a capture-specific feature; the new variant uses ports seen as benign in training.",
+          "A foreign cloud scrubbing provider can absorb the attack within 30 minutes, but only if the operator redirects all traffic and shares full packet captures, which include subscriber IP addresses and phone numbers."
+        ],
+        "CERT": [
+          "A foreign CERT reports that the same botnet hit two other operators in the region yesterday and shares indicators of compromise under the Traffic Light Protocol (TLP:AMBER)."
+        ]
+      }
+    },
+    {
+      "sim_time": "T+02:00",
+      "query_hint": "personal data breach notification affected persons emergency services availability retraining AI model validation accuracy robustness",
+      "events": {
+        "DPA": [
+          "An anonymous tip: during the incident a misconfigured logging server exposed subscriber location records (about 120,000 subscribers) to the internet for an unknown period."
+        ],
+        "REGULATOR": [
+          "Emergency-number call success rate fell below 80% for 40 minutes in two regions."
+        ],
+        "SOC": [
+          "The detector vendor proposes to retrain the AI model on the captured attack traffic and redeploy it in 6 hours, without independent validation or a rollback plan."
+        ]
+      }
+    },
+    {
+      "sim_time": "T+06:00",
+      "query_hint": "cross-border cooperation cybercrime mutual assistance evidence lessons learned AI system reuse other sector risk management post-incident",
+      "events": {
+        "SOC": ["Attack traffic is subsiding after manual filtering; services are 95% restored."],
+        "CERT": ["Attack command servers are traced to hosting providers in a jurisdiction with which there is no mutual legal assistance agreement."],
+        "REGULATOR": ["The ministry asks for a lessons-learned report by tomorrow, and asks whether the same AI detector can be reused by the national electricity utility's network."],
+        "DPA": ["Journalists ask whether 'the AI failed' and whether affected subscribers will be told."]
+      }
+    }
+  ]
+}
