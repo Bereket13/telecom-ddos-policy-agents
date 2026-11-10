@@ -1,0 +1,30 @@
+{
+  "run": "run_20261110_165815",
+  "llm_calls": 15,
+  "agent_decisions": 11,
+  "coordinator_briefs": 4,
+  "tool_calls": 1,
+  "valid_json": 15,
+  "messages_routed_between_agents": 7,
+  "citations_total": 45,
+  "citations_by_status": {
+    "verified": 39,
+    "source-retrieved-page-mismatch": 6
+  },
+  "citation_verified_rate": 0.867,
+  "distinct_sources_cited_verified": {
+    "G03": 5,
+    "G09": 7,
+    "G05": 16,
+    "G12": 3,
+    "G07": 1,
+    "G01": 1,
+    "G04": 4,
+    "G13": 1,
+    "U01": 1
+  },
+  "gap_statements_total": 23,
+  "gap_statements_distinct": 11,
+  "mean_latency_s": 156.1,
+  "total_llm_minutes": 39.0
+}
