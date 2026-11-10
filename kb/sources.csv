@@ -1,0 +1,15 @@
+﻿source_id,file,title,publisher,year,scope,doc_type,url
+G01,G01_ITU-T_Y.3172_ML_architecture.pdf,"ITU-T Y.3172: Architectural framework for machine learning in future networks including IMT-2020",ITU-T,2019,global,standard,https://www.itu.int/rec/T-REC-Y.3172-201906-I/en
+G02,G02_ITU_AI_Ready_Readiness_Framework_v2.pdf,"AI Ready: Analysis Towards a Standardized Readiness Framework, Version 2.0",ITU,2026,global,report,https://www.itu.int/pub/T-AI4G-AI4GOOD-2025-6
+G03,G03_ITU-T_X.1056_Telecom_Incident_Management.pdf,"ITU-T X.1056: Security incident management guidelines for telecommunications organizations",ITU-T,2009,global,standard,https://www.itu.int/rec/T-REC-X.1056-200901-I/en
+G04,G04_EU_AI_Act_2024-1689.pdf,"Regulation (EU) 2024/1689 (Artificial Intelligence Act)",European Union,2024,regional-EU,law,https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+G05,G05_EU_NIS2_Directive_2022-2555.pdf,"Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity",European Union,2022,regional-EU,law,https://eur-lex.europa.eu/eli/dir/2022/2555/oj
+G07,G07_NIST_CSF_2.0.pdf,"NIST Cybersecurity Framework (CSF) 2.0",NIST (USA),2024,global,framework,https://doi.org/10.6028/NIST.CSWP.29
+G08,G08_NIST_AI_RMF_1.0.pdf,"NIST AI Risk Management Framework (AI RMF 1.0)",NIST (USA),2023,global,framework,https://doi.org/10.6028/NIST.AI.100-1
+G09,G09_NIST_SP800-61r3_Incident_Response.pdf,"NIST SP 800-61 Rev. 3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management",NIST (USA),2025,global,framework,https://doi.org/10.6028/NIST.SP.800-61r3
+G10,G10_OECD_AI_Recommendation.pdf,"OECD Recommendation of the Council on Artificial Intelligence",OECD,2024,global,recommendation,https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449
+G12,G12_AU_Malabo_Convention_Cyber_Security_Data_Protection.pdf,"African Union Convention on Cyber Security and Personal Data Protection (Malabo Convention)",African Union,2014,regional-Africa,treaty,https://www.ccdcoe.org/uploads/2018/11/AU-270614-CSConvention.pdf (text copy; official page: au.int/en/treaties/1164)
+G13,G13_AU_Continental_AI_Strategy_2024.pdf,"African Union Continental Artificial Intelligence Strategy",African Union,2024,regional-Africa,strategy,https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy
+U01,U01_UAE_National_AI_Strategy_2031.pdf,"UAE National Strategy for Artificial Intelligence 2031",UAE Government,2018,national-UAE,strategy,https://ai.gov.ae/strategy/
+E01,E01_Ethiopia_Computer_Crime_Proclamation_958-2016_A19_translation.pdf,"Ethiopia Computer Crime Proclamation No. 958/2016 (ARTICLE 19 legal analysis with English translation)",ARTICLE 19,2016,national-Ethiopia,law-analysis,https://www.article19.org/data/files/medialibrary/38450/Ethiopia-Computer-Crime-Proclamation-Legal-Analysis-July-(1).pdf
+E02,E02_CoE_Octopus_Ethiopia_Cybercrime_Legal_Profile.pdf,"Council of Europe Octopus: Cybercrime legal profile of Ethiopia",Council of Europe,2020,national-Ethiopia,legal-profile,https://rm.coe.int/octocom-legal-profile-ethiopia-version-1apr2020/16809e9270
