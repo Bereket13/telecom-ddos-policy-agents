@@ -1,0 +1,11 @@
+{
+  "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunk_size": 800,
+  "chunk_overlap": 120,
+  "min_chunk_chars": 80,
+  "index_type": "IndexFlatIP (cosine on normalised vectors)",
+  "n_chunks": 3114,
+  "dim": 384,
+  "built": "2026-11-10 15:08:31",
+  "embed_seconds": 133.1
+}
