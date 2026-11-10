@@ -1,0 +1,138 @@
+[
+  {
+    "round": 1,
+    "sim_time": "T+00:00",
+    "brief": {
+      "summary": "The SOC and REGULATOR have identified a significant surge in signalling and DNS traffic, leading to a 28.2% drop in voice call setup success rate and mobile data session timeouts. Both entities are requesting an investigation and preliminary assessment of the issues. The SOC is taking manual mitigation actions, while the REGULATOR is requesting further information and a final report within one month. There are gaps in the notification procedures for AI systems and cross-border cooperation.",
+      "conflicts": [
+        "SOC and REGULATOR are requesting the same information from each other and the operator"
+      ],
+      "unclear_responsibilities": [
+        "It is unclear who should lead the investigation and containment measures when the incident is a telecom outage, a cyber attack, and a personal-data breach"
+      ],
+      "policy_gaps": [
+        {
+          "gap": "Notification procedures for AI systems are not clearly defined",
+          "global_example": "The AI Act (Regulation (EU) 2024/1689) requires high-risk AI systems to notify serious incidents, but it does not specify the procedures for notification.",
+          "ref": "G04 p.102 p.102",
+          "recommendation": "The regulator should provide clear guidelines on the notification procedures for AI systems, including the criteria for serious incidents and the reporting obligations."
+        },
+        {
+          "gap": "Cross-border cooperation mechanisms are not clearly defined",
+          "global_example": "The NIS2 Directive (Directive (EU) 2022/2555) requires entities to provide information about significant incidents to the competent authorities, but it does not specify the mechanisms for cross-border cooperation.",
+          "ref": "G05 p.50 p.50",
+          "recommendation": "The regulator should establish clear cross-border cooperation mechanisms to ensure timely and effective information sharing and response to incidents."
+        }
+      ],
+      "standards_gaps": [
+        "Technical standards for AI risk management are not widely adopted"
+      ],
+      "priorities_next_round": [
+        "Develop clear guidelines for AI system notification procedures and cross-border cooperation mechanisms"
+      ]
+    },
+    "citation_check": [
+      {
+        "ref": "G04 p.102 p.102",
+        "status": "verified"
+      },
+      {
+        "ref": "G05 p.50 p.50",
+        "status": "verified"
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "sim_time": "T+00:45",
+    "brief": "{\n  \"summary\": \"The SOC and CERT have initiated actions to address the ongoing attack and its impact on communication services. The SOC is updating the detector and sharing information, while CERT is coordinating with the REGULATOR for containment measures. However, there are gaps in notification procedures and cross-border cooperation mechanisms.\",\n  \"conflicts\": [\"The SOC and CERT have different priorities and deadlines for their actions, which may lead to confusion and inefficiency.\"],\n  \"unclear_responsibilities\": [\"It is unclear who should lead the incident when it involves a telecom outage, a cyber attack, and a personal-data breach. The SOC and CERT have different roles and responsibilities, which may lead to overlapping or conflicting actions.\"],\n  \"policy_gaps\": [\n    {\n      \"gap\": \"A clear notification procedure for AI systems and cross-border cooperation mechanisms are missing or unclear.\",\n      \"global_example\": \"Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity and Directive (EU) 2022/2557 should be considered to be essential entities under this Directive. Moreover, each Member State should ensure that its national cybersecurity strategy provides for a policy framework for enhanced coordination within that Member State between its competent authorities under this Directive and those under Directive (EU) 2022/2557 in the context of information sharing about risks, cyber threats, and incidents as well as on non-cyber risks, threats and incidents, and the exercise of supervisory tasks.\",\n      \"ref\": \"G05 p.7\",\n      \"recommendation\": \"Implement clear notification procedures and cross-border cooperation mechanisms as per Directive (EU) 2022/2555 (NIS2) and Directive (EU) 2022/2557.\"\n    },\n    {\n      \"gap\": \"A clear policy framework for enhanced coordination within the Member States between the competent authorities under Directive (EU) 2022/2555 and those under Directive (EU) 2022/2557 in the context of information sharing about risks, cyber threats, and incidents as well as on non-cyber risks, threats and incidents, and the exercise of supervisory tasks is missing.\",\n      \"global_example\": \"Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity and Directive (EU) 2022/2557 should be considered to be essential entities under this Directive. Moreover, each Member State should ensure that its national cybersecurity strategy provides for a policy framework for enhanced coordination within that Member State between its competent authorities under this Directive and those under Directive (EU) 2022/2557 in the context of information sharing about risks, cyber threats, and incidents as well as on non-cyber risks, threats and incidents, and the exercise of supervisory tasks.\",\n      \"ref\": \"G05 p.7\",\n      \"recommendation\": \"Develop a clear policy framework for enhanced coordination between the competent authorities under Directive (EU) 2022/2555 and those under Directive (EU) 2022/2557.\"\n    }\n  ],\n  \"standards_gaps\": [\"There is no specific technical standard or evaluation",
+    "citation_check": []
+  },
+  {
+    "round": 3,
+    "sim_time": "T+02:00",
+    "brief": {
+      "summary": "The agents have identified gaps in notification procedures and cross-border cooperation mechanisms. The SOC, REGULATOR, DPA, and CERT have all highlighted the need for clear procedures and mechanisms to address incidents involving AI systems and data breaches. The REGULATOR has also noted the need for effective incident management and cross-border cooperation.",
+      "conflicts": [
+        "SOC's request for independent validation and rollback plan conflicts with CERT's request for further information on containment measures and coordination with affected operators."
+      ],
+      "unclear_responsibilities": [
+        "It is unclear who should lead the notification of serious incidents involving AI systems and data breaches, as all relevant authorities (SOC, REGULATOR, DPA, CERT) are involved and have overlapping responsibilities."
+      ],
+      "policy_gaps": [
+        {
+          "gap": "Clear notification procedures for AI systems and cross-border cooperation mechanisms are missing or unclear.",
+          "global_example": "Regulation (EU) 2022/2555 (NIS2) on a high common level of cybersecurity, which requires entities to notify significant incidents, cyber threats, and near misses to the CSIRTs or competent authorities, and outlines the procedures for processing these notifications.",
+          "ref": "G05 p.55 (Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity)",
+          "recommendation": "Develop clear and standardized notification procedures for AI systems and cross-border cooperation mechanisms, as outlined in the Directive (EU) 2022/2555 (NIS2)."
+        },
+        {
+          "gap": "Cross-border cooperation mechanisms are missing or unclear.",
+          "global_example": "Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity, which requires entities to notify significant incidents, cyber threats, and near misses to the CSIRTs or competent authorities, and outlines the procedures for processing these notifications.",
+          "ref": "G05 p.55 (Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity)",
+          "recommendation": "Establish clear cross-border cooperation mechanisms and procedures for handling incidents involving AI systems and data breaches, as outlined in the Directive (EU) 2022/2555 (NIS2)."
+        }
+      ],
+      "standards_gaps": [
+        "There is no specific technical standard or evaluation practice for the validation and rollback plan of AI models, as mentioned in the NIST AI Risk Management Framework (AI RMF 1.0)."
+      ],
+      "priorities_next_round": [
+        "Develop clear and standardized notification procedures for AI systems and cross-border cooperation mechanisms, as outlined in the Directive (EU) 2022/2555 (NIS2)."
+      ]
+    },
+    "citation_check": [
+      {
+        "ref": "G05 p.55 (Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity)",
+        "status": "verified"
+      },
+      {
+        "ref": "G05 p.55 (Directive (EU) 2022/2555 (NIS2) on a high common level of cybersecurity)",
+        "status": "verified"
+      }
+    ]
+  },
+  {
+    "round": 4,
+    "sim_time": "T+06:00",
+    "brief": {
+      "summary": "The SOC, REGULATOR, DPA, and CERT have identified gaps in notification procedures and cross-border cooperation mechanisms. The SOC and REGULATOR have proposed developing clear and standardized procedures, while the DPA and CERT have emphasized the need for immediate containment measures and cross-border cooperation. The SOC and REGULATOR have also requested further information on containment measures and coordination with affected operators.",
+      "conflicts": [
+        "The SOC and REGULATOR have proposed developing clear and standardized procedures, while the DPA and CERT have emphasized the need for immediate containment measures and cross-border cooperation."
+      ],
+      "unclear_responsibilities": [
+        "It is unclear who should lead the development of clear and standardized notification procedures and cross-border cooperation mechanisms, especially when one incident involves multiple sectors and jurisdictions."
+      ],
+      "policy_gaps": [
+        {
+          "gap": "A clear and standardized notification procedure for AI systems and cross-border cooperation mechanisms, as outlined in the Directive (EU) 2022/2555 (NIS2).",
+          "global_example": "The SOC and REGULATOR have proposed developing clear and standardized procedures, while the DPA and CERT have emphasized the need for immediate containment measures and cross-border cooperation.",
+          "ref": "G05 p.14, G05 p.12, G08 p.44, G04 p.41, G04 p.106, G04 p.41, G13 p.56, G12 p.28, G12 p.31",
+          "recommendation": "Develop clear and standardized notification procedures and cross-border cooperation mechanisms in line with Directive (EU) 2022/2555 (NIS2) and other relevant policies."
+        },
+        {
+          "gap": "Cross-border cooperation mechanisms for the reuse of AI detectors between the telecommunications and electricity sectors.",
+          "global_example": "The SOC, REGULATOR, DPA, and CERT have highlighted the need for clear procedures and mechanisms to address incidents involving AI systems and data breaches.",
+          "ref": "G05 p.6, G13 p.56, G04 p.106, G04 p.41, G04 p.41, G04 p.41, G04 p.41, G12 p.28, G12 p.31",
+          "recommendation": "Clarify the roles and responsibilities for the reuse of AI detectors between the telecommunications and electricity sectors."
+        }
+      ],
+      "standards_gaps": [
+        "Technical standard or evaluation practice that is missing for the reuse of AI detectors between the telecommunications and electricity sectors."
+      ],
+      "priorities_next_round": [
+        "Develop clear and standardized notification procedures and cross-border cooperation mechanisms in line with Directive (EU) 2022/2555 (NIS2).",
+        "Clarify the roles and responsibilities for the reuse of AI detectors between the telecommunications and electricity sectors."
+      ]
+    },
+    "citation_check": [
+      {
+        "ref": "G05 p.14, G05 p.12, G08 p.44, G04 p.41, G04 p.106, G04 p.41, G13 p.56, G12 p.28, G12 p.31",
+        "status": "source-retrieved-page-mismatch"
+      },
+      {
+        "ref": "G05 p.6, G13 p.56, G04 p.106, G04 p.41, G04 p.41, G04 p.41, G04 p.41, G12 p.28, G12 p.31",
+        "status": "source-retrieved-page-mismatch"
+      }
+    ]
+  }
+]
